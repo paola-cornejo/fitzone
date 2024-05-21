@@ -1,0 +1,5 @@
+﻿Para crear la base de datos:
+1-Verificar en el appsettings el nombre de la BD. 
+  Si la BD ya existe, cambiarle el nombre en el appsettings
+2-abrir en VS la consola del administrador de paquetes
+3-correr el comando update-database
