@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Exercises\Data\" />
+    <Folder Include="Areas\Exercises\Data\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
