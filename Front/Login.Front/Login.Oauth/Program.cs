@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Login.Oauth.Data;
+using Login.Oauth;
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("LoginOauthContextConnection") ?? throw new InvalidOperationException("Connection string 'LoginOauthContextConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("FitZoneContextConnection") ?? throw new InvalidOperationException("Connection string 'LoginOauthContextConnection' not found.");
 
 builder.Services.AddDbContext<LoginOauthContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDbContext<ContextoBaseDatos>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<LoginOauthContext>();
 

@@ -1,0 +1,60 @@
+﻿@page
+@model Login.Oauth.Areas.Socios.Pages.CrearModel
+
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Crear</h1>
+
+<h4>Socio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">                
+                <label asp-for="Socio.nombre" class="control-label"></label>
+                <input asp-for="Socio.nombre" class="form-control" />
+                <span asp-validation-for="Socio.nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socio.telefono" class="control-label"></label>
+                <input asp-for="Socio.telefono" class="form-control" />
+                <span asp-validation-for="Socio.telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socio.mail" class="control-label"></label>
+                <input asp-for="Socio.mail" class="form-control" />
+                <span asp-validation-for="Socio.mail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socio.tipoDocumento" class="control-label"></label>
+                <input asp-for="Socio.tipoDocumento" class="form-control" />
+                <span asp-validation-for="Socio.tipoDocumento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socio.numeroDocumento" class="control-label"></label>
+                <input asp-for="Socio.numeroDocumento" class="form-control" />
+                <span asp-validation-for="Socio.numeroDocumento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socio.idDomicilio" class="control-label"></label>
+                <input asp-for="Socio.idDomicilio" class="form-control" />
+                <span asp-validation-for="Socio.idDomicilio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
