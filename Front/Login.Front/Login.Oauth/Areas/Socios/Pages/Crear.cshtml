@@ -6,53 +6,121 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>Crear</h1>
 
-<h4>Socio</h4>
+<body style=" background: #ff0000;">
+<h1>Alta Socio</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">                
-                <label asp-for="Socio.nombre" class="control-label"></label>
-                <input asp-for="Socio.nombre" class="form-control" />
-                <span asp-validation-for="Socio.nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Socio.telefono" class="control-label"></label>
-                <input asp-for="Socio.telefono" class="form-control" />
-                <span asp-validation-for="Socio.telefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Socio.mail" class="control-label"></label>
-                <input asp-for="Socio.mail" class="form-control" />
-                <span asp-validation-for="Socio.mail" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Socio.tipoDocumento" class="control-label"></label>
-                <input asp-for="Socio.tipoDocumento" class="form-control" />
-                <span asp-validation-for="Socio.tipoDocumento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Socio.numeroDocumento" class="control-label"></label>
-                <input asp-for="Socio.numeroDocumento" class="form-control" />
-                <span asp-validation-for="Socio.numeroDocumento" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Socio.idDomicilio" class="control-label"></label>
-                <input asp-for="Socio.idDomicilio" class="form-control" />
-                <span asp-validation-for="Socio.idDomicilio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+
+ <div class="row">
+     <div class="col-3">
+            <nav class="navbar">
+                <ul>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">groups</span>
+                        <a class="opciones_navbar" href="#">Socios</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">sports_gymnastics</span>
+                        <a class="opciones_navbar" href="#">Clases</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">emoji_events</span>
+                        <a class="opciones_navbar" href="#">Instructor</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">payments</span>
+                        <a class="opciones_navbar" href="#">Cobros</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">fitness_center</span>
+                        <a class="opciones_navbar" href="#">Equipamiento</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <a class="opciones_navbar" href="#">Notificaciones</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">admin_panel_settings</span>
+                        <a class="opciones_navbar" href="#">Administrador</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">settings</span>
+                        <a class="opciones_navbar" href="#">Configuración</a>
+                    </li>
+                    <li class="li_navbar">
+                        <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                        <a class="opciones_navbar" href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </nav>
+       </div>
+       @* <div class="col-6">
+            <form method="post" class="formulario">
+
+                <div class="container text-center">
+
+                    <div class="row align-items-start">
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="col">
+                            <div>
+                                <label asp-for="Socio.nombre" class="control-label">Nombre y Apellido:</label>
+                            </div>
+                            <div>
+                                <label asp-for="Socio.numeroDocumento" class="control-label">Nro DNI:</label>
+                            </div>
+                            <div>
+                                <label asp-for="Socio.mail" class="control-label">E-Mail:</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <input asp-for="Socio.nombre" class="form-control" />
+                                <span asp-validation-for="Socio.nombre" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <input asp-for="Socio.numeroDocumento" class="form-control" ; />
+                                <span asp-validation-for="Socio.numeroDocumento" class="text-danger"></span>
+                            </div>
+                            <div>
+                                <input asp-for="Socio.mail" class="form-control" ; />
+                                <span asp-validation-for="Socio.mail" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div>
+                                <div>
+                                    <input type="submit" value="Aceptar" class="btn btn-primary" style="margin: 20px 20px;" />
+                                </div>
+                                <div>
+                                    <input type="submit" value="Cancelar" class="btn btn-primary" style="margin: 20px 20px;" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>*@
+     </<div>
+
+
+      
+
+
+
+           
+        
+
     </div>
 </div>
+</body>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Volver</a>
 </div>
 
 @section Scripts {

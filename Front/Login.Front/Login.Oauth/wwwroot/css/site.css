@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+    font-size: 20px;    
 }
 
 @media (min-width: 768px) {
@@ -8,15 +8,49 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    
 }
 
-body {
-  margin-bottom: 60px;
+
+.formulario {
+    background: #641A58;
+}
+
+
+label {
+    color: white;
+    margin: 20px;
+
+}
+
+input.form-control {
+    background: #DBD4D4;   
+    border-radius: 0;
+    margin: 20px 20px;
+}
+
+.navbar {
+    background: #641A58;
+}
+
+.li_navbar {
+    list-style-type: none;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.opciones_navbar {
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+    font-size: 22px;
+    
+}
+
+.material-symbols-outlined {
+    margin-right: 20px;
+    color: white
 }
