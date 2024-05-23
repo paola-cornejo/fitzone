@@ -36,12 +36,69 @@
 
             </div>
         </nav>
+
+        
+
+
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="row">
+        <div class="col-2">            
+                    <nav class="navbar">
+                        <ul>
+                            <li class="li_navbar">
+                             <img src="img/logo_pp2.png" alt="Logo FitZone" class="img_logo"/>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">groups</span>
+                            <a class="nav_link" asp-area="Socios" asp-page="/Crear">Alta</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">sports_gymnastics</span>
+                                <a class="nav_link text-white" href="#">Clases</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">emoji_events</span>
+                                <a class="nav_link text-white" href="#">Instructor</a>
+                            </li>
+                            <li class="li_navbar">
+                        <span class="material-symbols-outlined">payments</span>
+                                <a class="nav_link text-white" href="#">Cobros</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">fitness_center</span>
+                                <a class="nav_link text-white" href="#">Equipamiento</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">notifications</span>
+                                <a class="nav_link text-white" href="#">Notificaciones</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">admin_panel_settings</span>
+                                <a class="nav_link text-white" href="#">Administrador</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">settings</span>
+                                <a class="nav_link text-white" href="#">Configuración</a>
+                            </li>
+                            <li class="li_navbar">
+                                <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                                <a class="nav_link text-white" href="#">Dashboard</a>
+                            </li>
+                        </ul>
+                    </nav>
+          </div>
+            <div class="col-6">
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+
     </div>
+
+
 
     <footer class="border-top footer text-muted">
         <div class="container">

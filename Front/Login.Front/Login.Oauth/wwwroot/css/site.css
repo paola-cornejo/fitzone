@@ -40,17 +40,25 @@ input.form-control {
     list-style-type: none;
     margin: 20px;
     margin-right: 20px;
+   
 }
 
-.opciones_navbar {
+.nav_link {
     text-decoration: none;
     color: white;
     font-family: Calibri;
     font-size: 22px;
-    
+    color: white;
 }
+
 
 .material-symbols-outlined {
     margin-right: 20px;
     color: white
+}
+
+.img_logo {
+    margin:0;
+    width:300px;
+    height:100px;
 }
