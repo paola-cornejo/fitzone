@@ -7,11 +7,10 @@
 }
 
 
-<body style=" background: #ff0000;">
-<h1>Alta Socio</h1>
-<hr />
-
- 
+<body class="style_body">
+<h1 class="style_h1">Alta Socio</h1>
+<hr />           
+    <div class="row">
         <div class="col-6">
             <form method="post" class="formulario">
 
@@ -23,7 +22,7 @@
 
                         <div class="col">
                             <div>
-                                <label asp-for="Socio.nombre" class="control-label">Nombre y Apellido:</label>
+                                <label asp-for="Socio.nombre" class="control-label">Nombre Completo:</label>
                             </div>
                             <div>
                                 <label asp-for="Socio.numeroDocumento" class="control-label">Nro DNI:</label>
@@ -63,23 +62,14 @@
                 </div>
             </form>
         </div>
-     </<div>
-
-
-      
-
-
-
-           
+    </div>
+  
         
 
-    </div>
-</div>
+ 
 </body>
 
-<div>
-    <a asp-page="Index">Volver</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
